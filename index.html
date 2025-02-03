@@ -33,7 +33,7 @@
         <!-- <img src="images/No-Image-Found-400x264.png" alt=""> -->
     </main>
     <footer>
-        <div class="w-[70vw] border-2 border-green-500 mx-auto rounded-2xl bg-white h-[500px] flex justify-between gap-8 items-center">
+        <div class="hidden w-[70vw] border-2 border-green-500 mx-auto rounded-2xl bg-white h-[500px] flex justify-between gap-8 items-center">
             <!-- left side container -->
             <div class="bg-[#EB575709] flex flex-col gap-6 flex-1 p-4">
                 <h3 class="text-[#111] text-2xl font-semibold">ChatGPT is an AI-powered chatbot platform that uses OpenAI's GPT technology to simulate human conversation.</h3>
@@ -78,7 +78,7 @@
 
 
         <!-- show details modal  -->
-         <section class="border-2 border-green-500">
+         <section class="">
                     <!-- Open the modal using ID.showModal() method -->
                 
                 <dialog id="my_modal" class="modal modal-bottom sm:modal-middle">
@@ -97,6 +97,11 @@
                 </div>
                 </dialog>
          </section>
+
+         <!-- show more button -->
+          <section id="see-more-button" class="hidden text-center m-9">
+            <button onclick="handleSeeMoreButton()" class="btn btn-error">See More</button>
+          </section>
     </footer>
     <script src="js/ai.js"></script>
 </body>
